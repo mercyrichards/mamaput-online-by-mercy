@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer components {
+  .nav-link {
+    @apply rounded-full px-3 py-2 text-sm font-bold uppercase tracking-wide transition hover:bg-amber-200 hover:text-red-950;
+  }
+
+  .product-card {
+    @apply scroll-mt-36 overflow-hidden rounded-lg border border-stone-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg;
+  }
+
+  .product-image {
+    @apply h-40 w-full object-cover;
+  }
+
+  .product-body {
+    @apply p-4;
+  }
+
+  .product-name {
+    @apply mt-2 text-xl font-black text-stone-950;
+  }
+
+  .product-price {
+    @apply mt-1 text-lg font-black text-red-900;
+  }
+}
